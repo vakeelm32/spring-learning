@@ -1,0 +1,13 @@
+endpoint - http://localhost:8080/users
+API - http://localhost:8080/users
+API - http://localhost:8080//users/1 - passing value in query params
+
+
+POST API - http://localhost:8080/users
+Payload/body request -
+{
+    "id": 11,
+    "name": "vakeel",
+    "birthDate": "2022-03-04T14:52:42.068+00:00"
+}
+
