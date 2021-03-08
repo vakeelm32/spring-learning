@@ -1,8 +1,12 @@
 package userservice.model;
 
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Date;
 
+@Entity
 public class User {
     public User(Integer id, String name, Date birthDate) {
         super();
@@ -11,6 +15,11 @@ public class User {
         this.birthDate = birthDate;
     }
 
+    public User(){
+
+    }
+    @Id
+    @GeneratedValue
     private Integer id;
     private String name;
     private Date birthDate;
